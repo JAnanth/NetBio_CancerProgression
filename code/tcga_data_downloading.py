@@ -1,14 +1,15 @@
 import os
-
 import subprocess
 import pandas as pd
 from os import getcwd
 
+print(getcwd())
+
 # Path to gdc-client executable
-gdc_client_path = getcwd() + '/gdc-client'
+gdc_client_path = getcwd() + '/data/manifests/gdc-client'
 
 # Path to your manifest file
-manifest_path = getcwd() + '/gdc_manifest.2024-07-30.txt'
+manifest_path = getcwd() + '/data/manifests/gdc_manifest.2024-07-30.txt'
 
 # Function to download data using gdc-client
 def download_data(gdc_client_path, manifest_path, output_dir):
